@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hailey Kim</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="styles/normalize.css">-->
+    <link rel="stylesheet" href="styles/index.css">
+    <!--<script src="js/jquery.js"></script>-->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/json/projects_parsing.js"></script>
+    <script type="text/javascript" src="js/json/projects.js"></script>
+    <!--   <script src="js/navigation.js"></script>-->
+</head>
+
+<body id="pageTop">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand js-scroll-trigger" href="#pageTop">Hailey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#pageTop">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#AboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header-img-area" id="headerPic">
+            <img src="images/header.jpg" alt="my picture" class="img-responsive" height="600px" width="100%">
+            <p id="textImage">
+                Hello World!
+            </p>
+        </div>
+    </header>
+
+    <section id="AboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1>lalalalala</h1>
+                    <p class="lead">about me </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Projects" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About this page</h2>
+                    <p class="lead">about project</p>
+                    <div id="projectsDiv" style="text-align:center">
+                        <div class="row" id="rowProjectsDiv">
+                        </div><!--end of div row-->
+                        <script>
+                            parsingProjectsForIndex(projects);
+                        </script>
+                    </div>  <!-- end of div projectsDiv-->
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form role="form" action="js/php/mail.php" method="post">
+                    <div class="form-group">
+                        <label for="email">Email </label>
+                        <input type="email" class="form-control" id="email" name="email" tabindex="1" placeholder="example@example.com" />
+
+                        <label for="name">Name </label>
+                        <input type="text" class="form-control" id="name" name="name" tabindex="2" placeholder="Your name" />
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" rows="5" id="message" tabindex="3" placeholder="Your message"></textarea>
+                        <br />
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">© Handmade by me 2017</p>
+    </div>
+</footer>
+
+<script src="js/scrolling-nav.js"></script>
+</body>
+
+</html>
