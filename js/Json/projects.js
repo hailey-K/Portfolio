@@ -1,0 +1,1 @@
+var projects = '[{"imgurl": "js/json/img/1.jpg","caption": "Image 1 Caption"},{"imgurl": "js/json/img/2.jpg","caption": "Image 2 Caption"},{"imgurl": "js/json/img/3.jpg","caption": "Image 3 Caption"},{"imgurl": "js/json/img/4.jpg","caption": "Image 4 Caption"},{"imgurl": "js/json/img/5.jpg","caption": "Image 5 Caption"}]';

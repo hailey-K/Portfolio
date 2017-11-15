@@ -1,0 +1,29 @@
+html {
+}
+header {
+    padding: 54px 0 100px;
+}
+
+@media (min-width: 992px) {
+    header {
+        /*padding: 156px 0 100px;*/
+        padding: 54px 0 100px;
+    }
+}
+
+section {
+    padding: 150px 0;
+}
+.header-img-area {
+    text-align: center;
+}
+#textImage {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+}
+
